@@ -1,0 +1,86 @@
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  margin-left: 170px;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+/* Navbar */
+nav {
+  margin-left: 240px;
+}
+
+nav ul {
+  display: flex;
+  gap: 0px;  /* Los botones ahora estarán más juntos */
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #045f4b;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 0px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Botón hover: cuando se pasa el ratón sobre un botón, todos los botones se iluminan juntos */
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #045f4b;
+  color: white;
+  transform: scale(1.2); /* Aumenta el tamaño */
+  z-index: 1; /* Asegura que el hover sobresalga */
+}
+
+/* Crear efecto de "unión" al pasar el ratón sobre cualquier botón */
+nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #045f4b; /* Fondo verde */
+  border-radius: 0px;
+  z-index: -1; /* Coloca el fondo detrás del texto */
+}
+
+/* Botón activo */
+nav ul li a.active {
+  background-color: #045f4b;
+  color: white;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
