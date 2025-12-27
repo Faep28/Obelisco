@@ -1,1 +1,143 @@
-<p>contactanos works!</p>
+<!-- Hero Section -->
+<section class="contacto-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Contáctanos</h1>
+    <p>Estamos aquí para ayudarte con tu próximo proyecto</p>
+  </div>
+</section>
+
+<!-- Sección Principal -->
+<section class="contacto-main">
+  <div class="contacto-container">
+    
+    <!-- Información de Contacto -->
+    <div class="contacto-info">
+      <h2>Información de Contacto</h2>
+      <p class="info-descripcion">¿Tienes alguna pregunta o deseas solicitar una cotización? No dudes en contactarnos.</p>
+      
+      <div class="info-items">
+        <div class="info-item">
+          <div class="info-icon">
+            <mat-icon>phone</mat-icon>
+          </div>
+          <div class="info-text">
+            <h4>Teléfono</h4>
+            <p>+51 946 109 566 / +51 946 109 586</p>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-icon">
+            <mat-icon>email</mat-icon>
+          </div>
+          <div class="info-text">
+            <h4>Correo Electrónico</h4>
+            <p>ventas&#64;fsobelisco.com</p>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-icon">
+            <mat-icon>location_on</mat-icon>
+          </div>
+          <div class="info-text">
+            <h4>Ubicación</h4>
+            <p>Lima, Perú</p>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-icon">
+            <mat-icon>access_time</mat-icon>
+          </div>
+          <div class="info-text">
+            <h4>Horario de Atención</h4>
+            <p>Lunes - Sábado: 08:00 - 18:30</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contacto-directo">
+        <h4>Contáctanos directamente:</h4>
+        <div class="botones-contacto">
+          <a href="https://wa.me/51946109566?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios" 
+             target="_blank" class="btn-whatsapp">
+            <mat-icon>chat</mat-icon> WhatsApp
+          </a>
+          <a href="mailto:ventas@fsobelisco.com?subject=Consulta desde la web" class="btn-email">
+            <mat-icon>email</mat-icon> Enviar Email
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Formulario de Contacto -->
+    <div class="contacto-form-container">
+      <h2>Envíanos un Mensaje</h2>
+      <p class="form-subtitle">Complete el formulario y nos pondremos en contacto a la brevedad.</p>
+      <form class="contacto-form" (ngSubmit)="enviarMensaje()">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo <span class="required">*</span></label>
+          <input type="text" id="nombre" [(ngModel)]="formulario.nombre" name="nombre" required 
+                 placeholder="Ingrese su nombre completo">
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Correo Electrónico <span class="required">*</span></label>
+            <input type="email" id="email" [(ngModel)]="formulario.email" name="email" required
+                   placeholder="ejemplo@correo.com">
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" [(ngModel)]="formulario.telefono" name="telefono"
+                   placeholder="+51 999 999 999">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="asunto">Asunto <span class="required">*</span></label>
+          <input type="text" id="asunto" [(ngModel)]="formulario.asunto" name="asunto" required
+                 placeholder="¿En qué podemos ayudarte?">
+        </div>
+        
+        <div class="form-group">
+          <label for="mensaje">Mensaje <span class="required">*</span></label>
+          <textarea id="mensaje" [(ngModel)]="formulario.mensaje" name="mensaje" required
+                    rows="5" placeholder="Describa su consulta o proyecto..."></textarea>
+        </div>
+        
+        <button type="submit" class="btn-enviar">
+          <mat-icon>send</mat-icon> Enviar Mensaje
+        </button>
+      </form>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Sección del Mapa -->
+<section class="mapa-section">
+  <div class="mapa-header">
+    <h2>Encuéntranos</h2>
+    <p>Visítanos en nuestra ubicación</p>
+  </div>
+  <div class="mapa-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.5!2d-77.1311379!3d-12.0511132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAzJzA0LjAiUyA3N8KwMDcnNTIuMSJX!5e0!3m2!1ses!2spe!4v1703620800000!5m2!1ses!2spe"
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/51946109566?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios" 
+   target="_blank" class="whatsapp-float">
+  <mat-icon>chat</mat-icon>
+</a>

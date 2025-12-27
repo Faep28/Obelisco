@@ -11,7 +11,7 @@ import { Header } from './header/header';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './modules/material-module';
 import { F } from '@angular/cdk/keycodes';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { Trabajos } from './components/trabajos/trabajos';
 
 @NgModule({
@@ -29,7 +29,8 @@ import { Trabajos } from './components/trabajos/trabajos';
     AppRoutingModule,
     HttpClientModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

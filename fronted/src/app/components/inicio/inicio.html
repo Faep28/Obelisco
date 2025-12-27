@@ -24,3 +24,123 @@
     </span>
   </div>
 </section>
+
+<section class="intro-panel" id="quienes-somos">
+  <div class="intro-panel__image" aria-hidden="true"></div>
+  <div class="intro-panel__content">
+    <img src="/assets/img/Logo5.png" alt="Logo Feconlider" class="intro-panel__logo">
+    <p class="intro-panel__text">Somos F&amp;S OBELISCO S.A.C., una empresa peruana con más de 30 años de experiencia en el sector de servicios generales y construcción. Iniciamos nuestras operaciones en el rubro de servicios de edificación pública y privada a nivel nacional, destacándonos en la ejecución de obras de acabado interior.</p>
+    <p class="intro-panel__text">Con el paso del tiempo, diversificamos nuestras actividades y, desde hace más de 10 años, brindamos servicios de arquitectura e ingeniería, abarcando la construcción de obras de edificación, saneamiento y viviendas. Hoy seguimos ofreciendo soluciones integrales para satisfacer las necesidades de nuestros clientes.</p>
+  </div>
+</section>
+
+<!-- Sección de Clientes -->
+<section class="clientes-section">
+  <div class="clientes-header">
+    <h2>NUESTROS PRINCIPALES CLIENTES</h2>
+    <div class="header-decoration"></div>
+  </div>
+  
+  <div class="clientes-carousel">
+    <button class="carousel-btn prev" (click)="prevClientes()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    
+    <div class="clientes-track-container">
+      <div class="clientes-track" [style.transform]="'translateX(' + clientesOffset + 'px)'">
+        <div class="cliente-logo"><img src="/assets/img/BCP.png" alt="BCP"></div>
+        <div class="cliente-logo"><img src="/assets/img/senati.png" alt="Senati"></div>
+        <div class="cliente-logo"><img src="/assets/img/pizzahut.png" alt="Pizza Hut"></div>
+        <div class="cliente-logo"><img src="/assets/img/donBelisario.jpg" alt="Don Belisario"></div>
+        <div class="cliente-logo"><img src="/assets/img/odf.jfif" alt="ODF"></div>
+        <div class="cliente-logo"><img src="/assets/img/antamina.png" alt="Antamina"></div>
+        <div class="cliente-logo"><img src="/assets/img/jockeyplaza.png" alt="Jockey Plaza"></div>
+        <div class="cliente-logo"><img src="/assets/img/altomayo.jfif" alt="Alto Mayo"></div>
+        <div class="cliente-logo"><img src="/assets/img/apm.png" alt="APM"></div>
+        <div class="cliente-logo"><img src="/assets/img/minka.png" alt="Minka"></div>
+        <div class="cliente-logo"><img src="/assets/img/essalud.png" alt="EsSalud"></div>
+        <div class="cliente-logo"><img src="/assets/img/municipalidadCallao.jfif" alt="Municipalidad del Callao"></div>
+        <div class="cliente-logo"><img src="/assets/img/diris lima cetro.png" alt="DIRIS Lima Centro"></div>
+        <div class="cliente-logo"><img src="/assets/img/paracas.png" alt="Paracas"></div>
+        <div class="cliente-logo"><img src="/assets/img/lacuracao.png" alt="La Curacao"></div>
+        <div class="cliente-logo"><img src="/assets/img/dpworld.jfif" alt="DP World"></div>
+        <div class="cliente-logo"><img src="/assets/img/efe.jfif" alt="EFE"></div>
+        <div class="cliente-logo"><img src="/assets/img/aduamerica.png" alt="Aduamerica"></div>
+        <div class="cliente-logo"><img src="/assets/img/fleischman.png" alt="Fleischman"></div>
+        <div class="cliente-logo"><img src="/assets/img/kfc.png" alt="KFC"></div>
+        <div class="cliente-logo"><img src="/assets/img/grupocentenario.png" alt="Grupo Centenario"></div>
+        <div class="cliente-logo"><img src="/assets/img/mtc.jfif" alt="MTC"></div>
+        <div class="cliente-logo"><img src="/assets/img/sunedu.png" alt="SUNEDU"></div>
+      </div>
+    </div>
+    
+    <button class="carousel-btn next" (click)="nextClientes()">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+</section>
+
+<section class="servicios-section" id="servicios">
+  <div class="servicios-overlay"></div>
+  <div class="servicios-content">
+    <h2 class="servicios-title">Nuestros Servicios</h2>
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <div class="servicio-image" style="background-image: url('/assets/img/construccion1-2-1.jpg')"></div>
+        <div class="servicio-info">
+          <h3 class="servicio-nombre">Infraestructura y Construcción</h3>
+          <a href="#servicios" class="servicio-btn">Ver más</a>
+        </div>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-image" style="background-image: url('/assets/img/oficina1.jpeg')"></div>
+        <div class="servicio-info">
+          <h3 class="servicio-nombre">Implementación y Remodelación de Oficinas</h3>
+          <a href="#servicios" class="servicio-btn">Ver más</a>
+        </div>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-image" style="background-image: url('/assets/img/mantenimiento2-1-1.jpg')"></div>
+        <div class="servicio-info">
+          <h3 class="servicio-nombre">Mantenimiento en General</h3>
+          <a href="#servicios" class="servicio-btn">Ver más</a>
+        </div>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-image" style="background-image: url('/assets/img/drywall1-2-1.jpg')"></div>
+        <div class="servicio-info">
+          <h3 class="servicio-nombre">Trabajos en Drywall</h3>
+          <a href="#servicios" class="servicio-btn">Ver más</a>
+        </div>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-image" style="background-image: url('/assets/img/pintura1-2.jpg')"></div>
+        <div class="servicio-info">
+          <h3 class="servicio-nombre">Pintura en General</h3>
+          <a href="#servicios" class="servicio-btn">Ver más</a>
+        </div>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-image" style="background-image: url('/assets/img/manpara3.jpeg')"></div>
+        <div class="servicio-info">
+          <h3 class="servicio-nombre">Instalación de Mamparas de Vidrio y Aluminio</h3>
+          <a href="#servicios" class="servicio-btn">Ver más</a>
+        </div>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-image" style="background-image: url('/assets/img/seguridad1.jpeg')"></div>
+        <div class="servicio-info">
+          <h3 class="servicio-nombre">Instalación de Cristales de Seguridad y Parabrisas</h3>
+          <a href="#servicios" class="servicio-btn">Ver más</a>
+        </div>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-image" style="background-image: url('/assets/img/cobertura1.jpeg')"></div>
+        <div class="servicio-info">
+          <h3 class="servicio-nombre">Coberturas y Estructuras Metálicas</h3>
+          <a href="#servicios" class="servicio-btn">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

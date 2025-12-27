@@ -1,0 +1,500 @@
+/* ===== HERO SECTION ===== */
+.nosotros-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/img/construccion1-2-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(4, 95, 75, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-line {
+  width: 80px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 auto 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== EMPRESA SECTION ===== */
+.empresa-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.empresa-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  align-items: center;
+}
+
+.empresa-imagen {
+  width: 100%;
+  height: 450px;
+  background-image: url('/assets/img/home2-1-1.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.empresa-imagen::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #045f4b;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+.empresa-contenido h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin: 0 0 25px 0;
+}
+
+.empresa-contenido p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.empresa-contenido strong {
+  color: #045f4b;
+}
+
+.empresa-stats {
+  display: flex;
+  gap: 80px;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #ddd;
+  justify-content: center;
+}
+
+.stat {
+  text-align: center;
+  min-width: 120px;
+}
+
+.stat-numero {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #045f4b;
+  margin-bottom: 5px;
+}
+
+.stat-texto {
+  font-size: 0.8rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== MVV SECTION ===== */
+.mvv-section {
+  position: relative;
+  padding: 60px 0;
+  background-image: url('/assets/img/fondotrasero1-2-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.mvv-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(4, 75, 60, 0.85) 100%);
+}
+
+.mvv-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.mvv-title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin: 0 0 40px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mvv-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.mvv-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #045f4b, #067a62);
+}
+
+.mvv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.mvv-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: linear-gradient(135deg, #045f4b, #067a62);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.mvv-card:hover .mvv-icon {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.mvv-icon mat-icon {
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.mvv-card h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mvv-card p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Valores Lista */
+.valores-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.valores-lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.valores-lista mat-icon {
+  color: #045f4b;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #045f4b 0%, #034b3c 100%);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.2rem;
+  color: white;
+  margin: 0 0 15px 0;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 30px 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: white;
+  color: #045f4b;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:hover {
+  background-color: #1a1a1a;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== SECCIÓN DE CLIENTES ===== */
+.clientes-section {
+  padding: 60px 40px;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.clientes-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clientes-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.header-decoration {
+  width: 80px;
+  height: 5px;
+  background: #f4c430;
+  margin: 15px auto 0;
+  border-radius: 3px;
+}
+
+.clientes-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  color: #045f4b;
+}
+
+.carousel-btn mat-icon {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.clientes-track-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.clientes-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.5s ease;
+  align-items: center;
+}
+
+.cliente-logo {
+  flex-shrink: 0;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.cliente-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.cliente-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .empresa-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .empresa-imagen {
+    height: 350px;
+    order: 2;
+  }
+  
+  .empresa-imagen::before {
+    display: none;
+  }
+  
+  .empresa-contenido {
+    order: 1;
+    text-align: center;
+  }
+  
+  .empresa-contenido h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .empresa-stats {
+    justify-content: center;
+  }
+  
+  .mvv-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .mvv-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .empresa-section {
+    padding: 60px 0;
+  }
+  
+  .empresa-container {
+    padding: 0 20px;
+  }
+  
+  .empresa-contenido h2 {
+    font-size: 1.8rem;
+  }
+  
+  .empresa-stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .mvv-section {
+    padding: 60px 0;
+  }
+  
+  .mvv-container {
+    padding: 0 20px;
+  }
+  
+  .mvv-card {
+    padding: 30px 20px;
+  }
+  
+  .cta-section {
+    padding: 60px 20px;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+}

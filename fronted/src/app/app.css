@@ -42,3 +42,16 @@
 .contact-bar .contact-item:nth-child(3) {
   order: 3; /* Email */
 }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.footer p {
+  margin: 0;
+  color: #fff;
+  font-size: 0.85rem;
+}
