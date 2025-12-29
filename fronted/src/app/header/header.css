@@ -22,7 +22,7 @@ header {
 
 /* Navbar */
 nav {
-  margin-left: 240px;
+  margin-left: 320px;
 }
 
 nav ul {
@@ -50,39 +50,23 @@ nav ul li a {
   align-items: center;
 }
 
-/* Botón hover: cuando se pasa el ratón sobre un botón, todos los botones se iluminan juntos */
+/* Botón hover: efecto sutil sin escalar */
 nav ul li a:hover:not(.mega-item),
 nav ul li a.active:not(.mega-item) {
   background-color: #045f4b;
   color: white;
-  transform: scale(1.2); /* Aumenta el tamaño */
-  z-index: 1; /* Asegura que el hover sobresalga */
 }
 
-/* Excluir dropdown del scale para que el mega-menu funcione bien */
+/* Aplicar el mismo efecto al dropdown toggle */
 nav ul li.dropdown:hover > a.dropdown-toggle {
-  transform: none;
-}
-
-/* Crear efecto de "unión" al pasar el ratón sobre cualquier botón */
-nav ul li a:hover:not(.mega-item)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #045f4b; /* Fondo verde */
-  border-radius: 0px;
-  z-index: -1; /* Coloca el fondo detrás del texto */
+  background-color: #045f4b;
+  color: white;
 }
 
 /* Botón activo */
 nav ul li a.active {
   background-color: #045f4b;
   color: white;
-  transform: scale(1.2);
-  z-index: 1;
 }
 
 /* ===== MEGA MENU SERVICIOS ===== */

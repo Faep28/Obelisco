@@ -17,10 +17,14 @@ export class Mantenimiento {
     { src: '/assets/img/m6.jpeg', alt: 'Proyecto de mantenimiento 6' },
     { src: '/assets/img/m7.jpeg', alt: 'Proyecto de mantenimiento 7' },
     { src: '/assets/img/m8.jpeg', alt: 'Proyecto de mantenimiento 8' },
+    { src: '/assets/img/z1.jpeg', alt: 'Proyecto de construcción 14' },
+     { src: '/assets/img/i12copia.jpeg', alt: 'Proyecto de construcción 15' },
+
+    
   ];
 
   currentIndex = 0;
-  itemsPerPage = 4;
+  itemsPerPage = 3;
 
   get visibleProyectos() {
     return this.proyectos.slice(this.currentIndex, this.currentIndex + this.itemsPerPage);
@@ -31,18 +35,20 @@ export class Mantenimiento {
   }
 
   get canGoNext() {
-    return this.currentIndex + this.itemsPerPage < this.proyectos.length;
+    return this.currentIndex < this.proyectos.length - this.itemsPerPage;
   }
 
   prevSlide() {
     if (this.canGoPrev) {
-      this.currentIndex -= this.itemsPerPage;
+      this.currentIndex = Math.max(0, this.currentIndex - this.itemsPerPage);
     }
   }
 
   nextSlide() {
     if (this.canGoNext) {
-      this.currentIndex += this.itemsPerPage;
+      const nextIndex = this.currentIndex + this.itemsPerPage;
+      const maxIndex = this.proyectos.length - this.itemsPerPage;
+      this.currentIndex = Math.min(nextIndex, maxIndex);
     }
   }
 }

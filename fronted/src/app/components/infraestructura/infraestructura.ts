@@ -9,14 +9,19 @@ import { Component } from '@angular/core';
 export class Infraestructura {
   // Galería de proyectos
   proyectos = [
-    { src: '/assets/img/c1.jpeg', alt: 'Proyecto de construcción 1' },
     { src: '/assets/img/c2.jpeg', alt: 'Proyecto de construcción 2' },
-    { src: '/assets/img/c3.jpeg', alt: 'Proyecto de construcción 3' },
+    { src: '/assets/img/cx.jpeg', alt: 'Proyecto de construcción 3' },
     { src: '/assets/img/c4.jpeg', alt: 'Proyecto de construcción 4' },
     { src: '/assets/img/c5.jpeg', alt: 'Proyecto de construcción 5' },
     { src: '/assets/img/c6.jpeg', alt: 'Proyecto de construcción 6' },
     { src: '/assets/img/c7.jpeg', alt: 'Proyecto de construcción 7' },
     { src: '/assets/img/c8.jpeg', alt: 'Proyecto de construcción 8' },
+    { src: '/assets/img/c9.jpeg', alt: 'Proyecto de construcción 9' },
+    { src: '/assets/img/c10.2.jpeg', alt: 'Proyecto de construcción 10' },
+    //{ src: '/assets/img/c11.jpeg', alt: 'Proyecto de construcción 11' },
+    { src: '/assets/img/c12copia.jpeg', alt: 'Proyecto de construcción 12' },
+    { src: '/assets/img/c13.jpeg', alt: 'Proyecto de construcción 13' },
+  
   ];
 
   currentIndex = 0;

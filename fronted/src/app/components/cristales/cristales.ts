@@ -14,7 +14,10 @@ export class Cristales {
     { src: '/assets/img/cr3.jpeg', alt: 'Proyecto de cristales 3' },
     { src: '/assets/img/cr4.jpeg', alt: 'Proyecto de cristales 4' },
     { src: '/assets/img/cr5.jpeg', alt: 'Proyecto de cristales 5' },
-    { src: '/assets/img/cr6.jpeg', alt: 'Proyecto de cristales 6' },
+    { src: '/assets/img/cri2.jpeg', alt: 'Proyecto de cristales 7' },
+    { src: '/assets/img/p4.jpeg', alt: 'Proyecto de pintura 4' },
+    { src: '/assets/img/p7.jpeg', alt: 'Proyecto de pintura 5' },
+
   ];
 
   currentIndex = 0;
