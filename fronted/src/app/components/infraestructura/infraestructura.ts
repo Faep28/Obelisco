@@ -15,12 +15,29 @@ export class Infraestructura {
     { src: '/assets/img/c5.jpeg', alt: 'Proyecto de construcción 5' },
     { src: '/assets/img/c6.jpeg', alt: 'Proyecto de construcción 6' },
     { src: '/assets/img/c7.jpeg', alt: 'Proyecto de construcción 7' },
-    { src: '/assets/img/c8.jpeg', alt: 'Proyecto de construcción 8' },
     { src: '/assets/img/c9.jpeg', alt: 'Proyecto de construcción 9' },
     { src: '/assets/img/c10.2.jpeg', alt: 'Proyecto de construcción 10' },
     //{ src: '/assets/img/c11.jpeg', alt: 'Proyecto de construcción 11' },
-    { src: '/assets/img/c12copia.jpeg', alt: 'Proyecto de construcción 12' },
     { src: '/assets/img/c13.jpeg', alt: 'Proyecto de construcción 13' },
+    { src: '/assets/img/c51.jpeg', alt: 'Proyecto de construcción 14' },
+    { src: '/assets/img/c52.jpeg', alt: 'Proyecto de construcción 15' },
+    { src: '/assets/img/c53.jpeg', alt: 'Proyecto de construcción 16' },
+    
+    { src: '/assets/img/c54.jpeg', alt: 'Proyecto de construcción 17' },
+    { src: '/assets/img/c55.jpeg', alt: 'Proyecto de construcción 18' },
+    
+    { src: '/assets/img/c66.jpeg', alt: 'Proyecto de construcción 19' },
+    
+    { src: '/assets/img/c67.jpeg', alt: 'Proyecto de construcción 20' },
+    { src: '/assets/img/c68.jpeg', alt: 'Proyecto de construcción 21' },
+
+
+
+
+
+
+
+
   
   ];
 

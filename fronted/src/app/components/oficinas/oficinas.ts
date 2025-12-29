@@ -20,9 +20,13 @@ export class Oficinas {
     { src: '/assets/img/i40.jpeg', alt: 'Proyecto de implementación 10' },
     { src: '/assets/img/i41.jpeg', alt: 'Proyecto de implementación 11' },
     { src: '/assets/img/i42.jpeg', alt: 'Proyecto de implementación 12' },
+    
+    { src: '/assets/img/i53.jpeg', alt: 'Proyecto de implementación 15' },
+
     { src: '/assets/img/i50.jpeg', alt: 'Proyecto de implementación 13' },
     { src: '/assets/img/i19.jpeg', alt: 'Proyecto de implementación 6' },
-    { src: '/assets/img/i18copia.png', alt: 'Proyecto de implementación 6' },
+    { src: '/assets/img/i18copia.png', alt: 'Proyecto de implementación 14' },
+    
     
     
   ];
