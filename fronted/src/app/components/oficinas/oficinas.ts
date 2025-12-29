@@ -14,7 +14,6 @@ export class Oficinas {
     { src: '/assets/img/i3.jpeg', alt: 'Proyecto de implementación 3' },
     { src: '/assets/img/i4.jpeg', alt: 'Proyecto de implementación 4' },
     { src: '/assets/img/f7.jpeg', alt: 'Proyecto de implementación 5' },
-    { src: '/assets/img/i6.jpeg', alt: 'Proyecto de implementación 6' },
     { src: '/assets/img/i7.jpeg', alt: 'Proyecto de implementación 7' },
     { src: '/assets/img/i8.jpeg', alt: 'Proyecto de implementación 8' },
     { src: '/assets/img/man1.jpeg', alt: 'Proyecto de implementación 9' },
@@ -22,10 +21,9 @@ export class Oficinas {
     { src: '/assets/img/i41.jpeg', alt: 'Proyecto de implementación 11' },
     { src: '/assets/img/i42.jpeg', alt: 'Proyecto de implementación 12' },
     { src: '/assets/img/i50.jpeg', alt: 'Proyecto de implementación 13' },
+    { src: '/assets/img/i19.jpeg', alt: 'Proyecto de implementación 6' },
+    { src: '/assets/img/i18copia.png', alt: 'Proyecto de implementación 6' },
     
-    { src: '/assets/img/i51.jpeg', alt: 'Proyecto de implementación 14' },
-    
-    { src: '/assets/img/i52.jpeg', alt: 'Proyecto de implementación 15' },
     
   ];
 

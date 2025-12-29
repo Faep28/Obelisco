@@ -104,7 +104,7 @@
 }
 
 .empresa-contenido strong {
-  color: #045f4b;
+  color: #1a1a1a;
 }
 
 .empresa-stats {
@@ -270,7 +270,7 @@
 
 /* ===== CTA SECTION ===== */
 .cta-section {
-  padding: 80px 40px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #045f4b 0%, #034b3c 100%);
   text-align: center;
 }
@@ -278,7 +278,7 @@
 .cta-content h2 {
   font-size: 2.2rem;
   color: white;
-  margin: 0 0 15px 0;
+  margin-bottom: 20px;
 }
 
 .cta-content p {
@@ -295,7 +295,7 @@
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  text-transform: uppercase;
+    margin: 0 0 6px 0;
   letter-spacing: 1px;
   border-radius: 50px;
   transition: all 0.3s ease;
@@ -409,9 +409,11 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 960px) {
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 700;
   }
-  
   .empresa-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -470,9 +472,10 @@
   }
   
   .empresa-contenido h2 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 30px;
   }
-  
   .empresa-stats {
     flex-direction: column;
     gap: 25px;
