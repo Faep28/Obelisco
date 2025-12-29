@@ -1,16 +1,60 @@
 <header>
   <div class="logo">
-    <img src="assets/img/Logo5.png" alt="F&S Obelisco Logo" height="100">
+    <img src="assets/img/fondo_obelisco_3.png" alt="F&S Obelisco Logo" height="100">
   </div>
 
   <nav>
     <ul>
       <li><a routerLink="/inicio" routerLinkActive="active">INICIO</a></li>
       <li><a routerLink="/nosotros" routerLinkActive="active">NOSOTROS</a></li>
-      <li><a routerLink="/servicio" routerLinkActive="active">SERVICIOS</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle">SERVICIOS <span class="arrow">▼</span></a>
+        <div class="mega-menu">
+          <div class="mega-menu-row">
+            <a routerLink="/infraestructura" class="mega-item">
+              <div class="mega-icon">
+                <mat-icon>construction</mat-icon>
+              </div>
+              <span>Infraestructura y Construcción</span>
+            </a>
+            <a routerLink="/oficinas" class="mega-item">
+              <div class="mega-icon">
+                <mat-icon>business</mat-icon>
+              </div>
+              <span>Implementación, Remodelación y Acabados</span>
+            </a>
+            <a routerLink="/mantenimiento" class="mega-item">
+              <div class="mega-icon">
+                <mat-icon>engineering</mat-icon>
+              </div>
+              <span>Mantenimiento en General</span>
+            </a>
+          </div>
+          <div class="mega-divider"></div>
+          <div class="mega-menu-row">
+            <a routerLink="/pintura" class="mega-item">
+              <div class="mega-icon">
+                <mat-icon>format_paint</mat-icon>
+              </div>
+              <span>Pintura y Trabajos Verticales</span>
+            </a>
+            <a routerLink="/cristales" class="mega-item">
+              <div class="mega-icon">
+                <mat-icon>window</mat-icon>
+              </div>
+              <span>Cristales de Seguridad y Parabrisas</span>
+            </a>
+            <a routerLink="/coberturas" class="mega-item">
+              <div class="mega-icon">
+                <mat-icon>roofing</mat-icon>
+              </div>
+              <span>Coberturas y Estructuras Metálicas</span>
+            </a>
+          </div>
+        </div>
+      </li>
       <li><a routerLink="/trabajos" routerLinkActive="active">TRABAJOS</a></li>
       <li><a routerLink="/contactanos" routerLinkActive="active">CONTÁCTANOS</a></li>
-      
     </ul>
   </nav>
 </header>

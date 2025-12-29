@@ -1,0 +1,88 @@
+<!-- Hero Section -->
+<section class="servicio-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Coberturas y Estructuras Metálicas</h1>
+    <p>Diseño y fabricación de estructuras metálicas y coberturas industriales</p>
+  </div>
+</section>
+
+<!-- Contenido Principal -->
+<section class="servicio-detalle">
+  <div class="servicio-container">
+    <div class="servicio-info">
+      <div class="servicio-icono">
+        <mat-icon>roofing</mat-icon>
+      </div>
+      <h2>¿Qué ofrecemos?</h2>
+      <p class="servicio-descripcion">
+        Diseñamos, fabricamos e instalamos estructuras metálicas y coberturas para 
+        proyectos industriales, comerciales y residenciales. Trabajamos con materiales 
+        de alta calidad y técnicas modernas de soldadura y ensamblaje.
+      </p>
+    </div>
+
+    <div class="servicio-lista">
+      <h3>Nuestros trabajos incluyen:</h3>
+      <ul>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Coberturas para naves industriales</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Techos metálicos y policarbonato</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Estructuras metálicas para edificaciones</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Sol y sombra </span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Cerramientos y barandas en acero inox</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Escaleras y plataformas metálicas</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Instalación de rejillas HRP industriales</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Galería con Carrusel -->
+  <div class="servicio-galeria">
+    <h3>Proyectos Realizados</h3>
+    <div class="galeria-carrusel">
+      <button class="galeria-btn prev" (click)="prevSlide()" [disabled]="!canGoPrev">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      
+      <div class="galeria-grid">
+        <div class="galeria-item" *ngFor="let proyecto of visibleProyectos">
+          <img [src]="proyecto.src" [alt]="proyecto.alt">
+        </div>
+      </div>
+      
+      <button class="galeria-btn next" (click)="nextSlide()" [disabled]="!canGoNext">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="servicio-cta">
+  <div class="cta-content">
+    <h2>¿Necesitas una estructura metálica?</h2>
+    <p>Contáctanos y te asesoramos sin compromiso</p>
+    <a routerLink="/contactanos" class="btn-contactar">Contáctanos</a>
+  </div>
+</section>

@@ -12,14 +12,14 @@ export class Inicio {
   currentSlide = 0; // Índice de la imagen actual
   slides = [
     {
-      image: '/assets/img/fondo1.jpeg',
+      image: '/assets/img/fondo2.5.jpeg',
       title: 'Construcción',
-      description: 'Proyectos de calidad que impulsan tu futuro.'
+      description: 'Edificaciones e Infraestructura.'
     },
     {
       image: '/assets/img/fondo5.jpeg',
       title: 'Servicios Generales',
-      description: 'Trabajos de albañilería, pintura, y más.'
+      description: 'Implementaciones y mantenimiento.'
     }
   ];
 
@@ -46,6 +46,14 @@ export class Inicio {
   // Cambiar imagen al hacer clic en el botón de navegación (bolita)
   changeSlideManually(index: number): void {
     this.changeSlide(index);
+  }
+
+  // Scroll suave a la sección de servicios
+  scrollToServicios(): void {
+    const element = document.getElementById('servicios');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   // ===== Carrusel de Clientes =====

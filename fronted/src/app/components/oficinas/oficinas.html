@@ -1,0 +1,88 @@
+<!-- Hero Section -->
+<section class="servicio-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Implementación, Remodelación y Acabados</h1>
+    <p>Transformamos espacios en ambientes funcionales y modernos</p>
+  </div>
+</section>
+
+<!-- Contenido Principal -->
+<section class="servicio-detalle">
+  <div class="servicio-container">
+    <div class="servicio-info">
+      <div class="servicio-icono">
+        <mat-icon>business</mat-icon>
+      </div>
+      <h2>¿Qué ofrecemos?</h2>
+      <p class="servicio-descripcion">
+        Especializados en la implementación y remodelación integral de espacios. 
+        Diseñamos y ejecutamos proyectos para oficinas, viviendas y locales comerciales,
+        optimizando cada ambiente para mejorar la funcionalidad y el confort.
+      </p>
+    </div>
+
+    <div class="servicio-lista">
+      <h3>Nuestros trabajos incluyen:</h3>
+      <ul>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Diseño y distribución de espacios</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Instalación de tabiquería y divisiones modulares</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Trabajos en Drywall y cielos rasos</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Instalación de pisos laminados y alfombras</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Instalación de mamparas de vidrio y aluminio</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Acabados y pintura especializada</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Instalaciones eléctricas</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Galería con Carrusel -->
+  <div class="servicio-galeria">
+    <h3>Proyectos Realizados</h3>
+    <div class="galeria-carrusel">
+      <button class="galeria-btn prev" (click)="prevSlide()" [disabled]="!canGoPrev">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      
+      <div class="galeria-grid">
+        <div class="galeria-item" *ngFor="let proyecto of visibleProyectos">
+          <img [src]="proyecto.src" [alt]="proyecto.alt">
+        </div>
+      </div>
+      
+      <button class="galeria-btn next" (click)="nextSlide()" [disabled]="!canGoNext">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="servicio-cta">
+  <div class="cta-content">
+    <h2>¿Necesitas remodelar tu espacio?</h2>
+    <p>Contáctanos y te asesoramos sin compromiso</p>
+    <a routerLink="/contactanos" class="btn-contactar">Contáctanos</a>
+  </div>
+</section>

@@ -2,7 +2,7 @@
   <div class="inicio-contenido">
     <h1>{{ titulo }}</h1>
     <p>{{ descripcion }}</p>
-    <a href="#servicios" class="btn-saber-mas">Saber más</a>
+    <button (click)="scrollToServicios()" class="btn-saber-mas">Saber más</button>
   </div>
 
   <!-- Contenedor de las imágenes -->
@@ -89,56 +89,42 @@
         <div class="servicio-image" style="background-image: url('/assets/img/construccion1-2-1.jpg')"></div>
         <div class="servicio-info">
           <h3 class="servicio-nombre">Infraestructura y Construcción</h3>
-          <a href="#servicios" class="servicio-btn">Ver más</a>
+          <a routerLink="/infraestructura" class="servicio-btn">Ver más</a>
         </div>
       </div>
       <div class="servicio-card">
         <div class="servicio-image" style="background-image: url('/assets/img/oficina1.jpeg')"></div>
         <div class="servicio-info">
-          <h3 class="servicio-nombre">Implementación y Remodelación de Oficinas</h3>
-          <a href="#servicios" class="servicio-btn">Ver más</a>
+          <h3 class="servicio-nombre">Implementación, Remodelación y Acabados</h3>
+          <a routerLink="/oficinas" class="servicio-btn">Ver más</a>
         </div>
       </div>
       <div class="servicio-card">
         <div class="servicio-image" style="background-image: url('/assets/img/mantenimiento2-1-1.jpg')"></div>
         <div class="servicio-info">
           <h3 class="servicio-nombre">Mantenimiento en General</h3>
-          <a href="#servicios" class="servicio-btn">Ver más</a>
-        </div>
-      </div>
-      <div class="servicio-card">
-        <div class="servicio-image" style="background-image: url('/assets/img/drywall1-2-1.jpg')"></div>
-        <div class="servicio-info">
-          <h3 class="servicio-nombre">Trabajos en Drywall</h3>
-          <a href="#servicios" class="servicio-btn">Ver más</a>
+          <a routerLink="/mantenimiento" class="servicio-btn">Ver más</a>
         </div>
       </div>
       <div class="servicio-card">
         <div class="servicio-image" style="background-image: url('/assets/img/pintura1-2.jpg')"></div>
         <div class="servicio-info">
-          <h3 class="servicio-nombre">Pintura en General</h3>
-          <a href="#servicios" class="servicio-btn">Ver más</a>
-        </div>
-      </div>
-      <div class="servicio-card">
-        <div class="servicio-image" style="background-image: url('/assets/img/manpara3.jpeg')"></div>
-        <div class="servicio-info">
-          <h3 class="servicio-nombre">Instalación de Mamparas de Vidrio y Aluminio</h3>
-          <a href="#servicios" class="servicio-btn">Ver más</a>
+          <h3 class="servicio-nombre">Pintura y Trabajos Verticales</h3>
+          <a routerLink="/pintura" class="servicio-btn">Ver más</a>
         </div>
       </div>
       <div class="servicio-card">
         <div class="servicio-image" style="background-image: url('/assets/img/seguridad1.jpeg')"></div>
         <div class="servicio-info">
           <h3 class="servicio-nombre">Instalación de Cristales de Seguridad y Parabrisas</h3>
-          <a href="#servicios" class="servicio-btn">Ver más</a>
+          <a routerLink="/cristales" class="servicio-btn">Ver más</a>
         </div>
       </div>
       <div class="servicio-card">
         <div class="servicio-image" style="background-image: url('/assets/img/cobertura1.jpeg')"></div>
         <div class="servicio-info">
           <h3 class="servicio-nombre">Coberturas y Estructuras Metálicas</h3>
-          <a href="#servicios" class="servicio-btn">Ver más</a>
+          <a routerLink="/coberturas" class="servicio-btn">Ver más</a>
         </div>
       </div>
     </div>

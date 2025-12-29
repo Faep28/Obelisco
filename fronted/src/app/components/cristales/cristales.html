@@ -1,0 +1,78 @@
+<!-- Hero Section -->
+<section class="servicio-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Cristales de Seguridad y Parabrisas</h1>
+    <p>Instalación profesional de vidrios de seguridad para vehículos y edificaciones</p>
+  </div>
+</section>
+
+<!-- Contenido Principal -->
+<section class="servicio-detalle">
+  <div class="servicio-container">
+    <div class="servicio-info">
+      <div class="servicio-icono">
+        <mat-icon>window</mat-icon>
+      </div>
+      <h2>¿Qué ofrecemos?</h2>
+      <p class="servicio-descripcion">
+        Somos especialistas en la instalación de cristales de seguridad para edificaciones 
+        y parabrisas para todo tipo de vehículos. Trabajamos con vidrios templados y laminados 
+        de alta calidad que garantizan seguridad y durabilidad.
+      </p>
+    </div>
+
+    <div class="servicio-lista">
+      <h3>Nuestros trabajos incluyen:</h3>
+      <ul>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Instalación de parabrisas para maquinarias y equipos</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Cristales de seguidad templados y laminados</span>
+        </li>
+       
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Muro cortina - fachadas integrales</span>
+        </li>
+        
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Polarizados y laminas de seguridad</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Galería con Carrusel -->
+  <div class="servicio-galeria">
+    <h3>Proyectos Realizados</h3>
+    <div class="galeria-carrusel">
+      <button class="galeria-btn prev" (click)="prevSlide()" [disabled]="!canGoPrev">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      
+      <div class="galeria-grid">
+        <div class="galeria-item" *ngFor="let proyecto of visibleProyectos">
+          <img [src]="proyecto.src" [alt]="proyecto.alt">
+        </div>
+      </div>
+      
+      <button class="galeria-btn next" (click)="nextSlide()" [disabled]="!canGoNext">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="servicio-cta">
+  <div class="cta-content">
+    <h2>¿Necesitas instalar cristales de seguridad?</h2>
+    <p>Contáctanos y te asesoramos sin compromiso</p>
+    <a routerLink="/contactanos" class="btn-contactar">Contáctanos</a>
+  </div>
+</section>

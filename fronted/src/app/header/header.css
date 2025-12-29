@@ -6,6 +6,8 @@ header {
   padding: 0px 15px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
 }
 
 /* Logo */
@@ -25,11 +27,14 @@ nav {
 
 nav ul {
   display: flex;
+  align-items: center;
   gap: 0px;  /* Los botones ahora estarán más juntos */
 }
 
 nav ul li {
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 nav ul li a {
@@ -41,19 +46,26 @@ nav ul li a {
   font-size: 1rem;
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 /* Botón hover: cuando se pasa el ratón sobre un botón, todos los botones se iluminan juntos */
-nav ul li a:hover,
-nav ul li a.active {
+nav ul li a:hover:not(.mega-item),
+nav ul li a.active:not(.mega-item) {
   background-color: #045f4b;
   color: white;
   transform: scale(1.2); /* Aumenta el tamaño */
   z-index: 1; /* Asegura que el hover sobresalga */
 }
 
+/* Excluir dropdown del scale para que el mega-menu funcione bien */
+nav ul li.dropdown:hover > a.dropdown-toggle {
+  transform: none;
+}
+
 /* Crear efecto de "unión" al pasar el ratón sobre cualquier botón */
-nav ul li a:hover::after {
+nav ul li a:hover:not(.mega-item)::after {
   content: "";
   position: absolute;
   top: 0;
@@ -73,7 +85,152 @@ nav ul li a.active {
   z-index: 1;
 }
 
+/* ===== MEGA MENU SERVICIOS ===== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-toggle .arrow {
+  font-size: 0.6rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle .arrow {
+  transform: rotate(180deg);
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  width: auto;
+  min-width: 650px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.mega-menu-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 12px 0;
+}
+
+.mega-divider {
+  width: 90%;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0 auto;
+}
+
+.mega-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 110px;
+  background: transparent !important;
+}
+
+.mega-item:hover {
+  background: transparent !important;
+  transform: translateY(-3px);
+}
+
+.mega-icon {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #045f4b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.mega-item:hover .mega-icon {
+  background: #045f4b;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(4, 95, 75, 0.3);
+}
+
+.mega-icon mat-icon {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  color: #045f4b;
+  transition: color 0.3s ease;
+}
+
+.mega-item:hover .mega-icon mat-icon {
+  color: #ffffff;
+}
+
+.mega-item span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #333;
+}
+
+.mega-item:hover span {
+  color: #045f4b;
+}
+
 /* Responsive para pantallas pequeñas */
+@media (max-width: 992px) {
+  .mega-menu {
+    padding: 30px 20px;
+  }
+  
+  .mega-menu-row {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .mega-item {
+    min-width: 120px;
+  }
+  
+  .mega-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .mega-icon mat-icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -82,5 +239,22 @@ nav ul li a.active {
   nav ul {
     flex-direction: column;
     gap: 20px;
+  }
+  
+  .mega-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 20px;
+  }
+  
+  .mega-menu-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .mega-divider {
+    display: none;
   }
 }

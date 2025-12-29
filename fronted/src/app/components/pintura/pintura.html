@@ -1,0 +1,87 @@
+<!-- Hero Section -->
+<section class="servicio-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Pintura y Trabajos Verticales</h1>
+    <p>Acabados de calidad para interiores y exteriores</p>
+  </div>
+</section>
+
+<!-- Contenido Principal -->
+<section class="servicio-detalle">
+  <div class="servicio-container">
+    <div class="servicio-info">
+      <div class="servicio-icono">
+        <mat-icon>format_paint</mat-icon>
+      </div>
+      <h2>¿Qué ofrecemos?</h2>
+      <p class="servicio-descripcion">
+        Realizamos trabajos de pintura profesional para todo tipo de edificaciones. 
+        Contamos con personal calificado y utilizamos materiales de primera calidad 
+        para garantizar acabados duraderos y estéticamente impecables.
+      </p>
+    </div>
+
+    <div class="servicio-lista">
+      <h3>Nuestros trabajos incluyen:</h3>
+      <ul>
+
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Recubrimiento de pisos poliméricos</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Impermeabilización de techos y paredes</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Trabajos en altura para fachadas y estructuras elevadas</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Trabajos verticales de mantenimiento</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Pintura industrial para tanques de almacenamiento</span>
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>
+          <span>Pintura de interiores residenciales, comerciales e industriales</span>
+        </li>
+      
+        
+      </ul>
+    </div>
+  </div>
+
+  <!-- Galería con Carrusel -->
+  <div class="servicio-galeria">
+    <h3>Proyectos Realizados</h3>
+    <div class="galeria-carrusel">
+      <button class="galeria-btn prev" (click)="prevSlide()" [disabled]="!canGoPrev">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      
+      <div class="galeria-grid">
+        <div class="galeria-item" *ngFor="let proyecto of visibleProyectos">
+          <img [src]="proyecto.src" [alt]="proyecto.alt">
+        </div>
+      </div>
+      
+      <button class="galeria-btn next" (click)="nextSlide()" [disabled]="!canGoNext">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="servicio-cta">
+  <div class="cta-content">
+    <h2>¿Necesitas un servicio de pintura?</h2>
+    <p>Contáctanos y te asesoramos sin compromiso</p>
+    <a routerLink="/contactanos" class="btn-contactar">Contáctanos</a>
+  </div>
+</section>
