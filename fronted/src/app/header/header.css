@@ -19,7 +19,7 @@ header {
 /* Logo */
 
 .logo {
-  margin-left: 0;
+  margin-right: 50px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -34,7 +34,7 @@ header {
 .logo img {
   height: 80px;
   width: auto;
-  max-width: 220px;
+  max-width: 300px;
   object-fit: contain;
 }
 
